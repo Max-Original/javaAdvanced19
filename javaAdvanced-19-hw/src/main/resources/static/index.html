@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<title>File upload example</title>
+</head>
+<body>
+	<div>
+
+		<div>
+
+
+			<div>
+				<h3>Registry</h3>
+
+				<form id="singleUploadForm" name="singleUploadForm" action="uploadFile" method="POST">
+					<p>
+						<b>Name:</b> <input id="singleFileUploadInput" type="text"
+							name="name" required />
+					</p>
+
+					<br>
+					<p>
+						<b>Email:</b> <input id="singleFileUploadInput" type="text"
+							name="email" required />
+					</p>
+
+
+					<input id="singleFileUploadInput" type="file" name="file" required />
+
+					<button type="submit">Submit</button>
+				</form>
+
+				<div>
+					<div id="singleFileUploadError"></div>
+					<div id="singleFileUploadSuccess"></div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+</html>
