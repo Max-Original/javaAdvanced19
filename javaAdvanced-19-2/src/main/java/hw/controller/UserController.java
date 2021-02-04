@@ -37,12 +37,12 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@GetMapping(value = { "/", "/index", "/home", "/default" })
+	@GetMapping(value = { "/", "/index", "/home", "/default" } )
 	public String homePage() {
 		return "index";
 	}
 
-	@GetMapping("/sing-up")
+	@GetMapping("/sign-up")
 	public String showSignupPage() {
 		return "sign-up";
 	}
@@ -106,7 +106,7 @@ public class UserController {
 		log.info("Showing Users list with File");
 		ModelAndView mav = new ModelAndView("users");
 		List<User> usersList = userService.getAllUsers();
-		mav.addObject("userList", usersList);
+		mav.addObject("usersList", usersList);
 		return mav;
 	}
 
@@ -122,7 +122,7 @@ public class UserController {
 			if (file.exists()) {
 				log.info("File Exists: ID" + id + " File " + deletedFileName);
 				log.info("Deleteing User with File");
-				boolean status = userService.deleteFile(id, deletedFileName);
+				boolean status = userService.deleteUser(id);
 				log.info("Status: " + status);
 				if (status) {
 					log.info("User Deleted with file Status: " + status);

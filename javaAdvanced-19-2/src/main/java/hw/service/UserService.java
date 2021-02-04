@@ -11,6 +11,6 @@ public interface UserService {
 	
 	public List<User> getAllUsers();
 	
-	public boolean deleteFile(Long id, String file);
+	public boolean deleteUser(Long id);
 	
 }

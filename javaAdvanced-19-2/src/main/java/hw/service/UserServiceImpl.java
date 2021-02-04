@@ -39,19 +39,13 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public boolean deleteFile(Long id, String file) {
+	public boolean deleteUser(Long id) {
 		
 		boolean status = false;
 		try {
-			if(id !=0 && file != null) {
-				userRepository.deleteUserWithFile(id, file);
-				System.out.println(this.getClass().getSimpleName() + ":deleting employee... " + id);
-				String path = uploadDirectory + "/" + file;
-				System.out.println("Path=" + path);
-				File fileToDelete = new File(path);
-				status = fileToDelete.delete();
-				System.out.println(this.getClass().getSimpleName() + ":deleting file... " + file);
-				System.out.println("Success: " + status + " fileToDelete: " + fileToDelete);
+			if(id !=0) {
+				userRepository.deleteById(id);
+				
 				
 				return status;
 			}

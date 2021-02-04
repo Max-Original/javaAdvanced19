@@ -21,7 +21,7 @@
 		<div class="container">
 			<div class="signup-content">
 				<div class="signup-form">
-					<h3 class="form-title">Employee Sign-Up Form</h3>
+					<h3 class="form-title">User Sign-Up Form</h3>
 					<form class="register-form" name="register-form" id="register-form" >
 						<div class="form-group">
 							<label for="fname"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -54,12 +54,10 @@
   </center>
 				</div>
 				<div class="signup-image">
-					<figure>
-						<img src="/images/signup-image.jpg" alt="sing up image">
-					</figure>
+				
 					<div style="display: flex; justify-content: space-between;">
-						<a href="${pageContext.request.contextPath}/image-upload/employees"
-							class="signup-image-link">View Employees</a> <a
+						<a href="${pageContext.request.contextPath}/image-upload/users"
+							class="signup-image-link">View Users</a> <a
 							href="${pageContext.request.contextPath}/image-upload/home"
 							class="signup-image-link">Go Home</a>
 					</div>

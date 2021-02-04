@@ -10,8 +10,5 @@ import hw.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long>{
 
-	@Transactional
-	@Modifying
-	@Query("delete from Users e where id like ?1 and fileName like ?2")
-	public void deleteUserWithFile(Long id, String fileName);
+
 }

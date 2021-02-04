@@ -59,7 +59,7 @@
 
 <br><br>
 				<div style="display: flex; justify-content: space-between;">
-						<a href="${pageContext.request.contextPath}/image-upload/employees"
+						<a href="${pageContext.request.contextPath}/image-upload/users"
 							class="signup-image-link">View Users</a>
 							<a href="${pageContext.request.contextPath}/image-upload/sign-up" class="signup-image-link">Sign Up</a> 
 							 <a

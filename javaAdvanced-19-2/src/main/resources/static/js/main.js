@@ -51,7 +51,7 @@ $(document).ready(function() {
                         type: 'POST',
                         enctype: 'multipart/form-data',
                         data: data,
-                        url: "/image-upload/saveEmployee",
+                        url: "/image-upload/saveUser",
                         processData: false, //prevent jQuery from automatically transforming the data into a query string
                         contentType: false, // tell jQuery not to set contentType
                         cache: false,     
